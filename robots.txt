@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://aesiyoopa.125yingjiang.xyz/sitemap.xml
